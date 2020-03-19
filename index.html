@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u-days</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <a href="">
+            <div id="finddinvejlink" onclick="finddinvej()"><img id="finddinvej" src="/img/finddinvej.png" alt=""></div>
+        </a>
+
+        <div class="container">
+
+            <h1>TID TIL NÆSTE FOREDRAG:</h1>
+            <h3>LOKALE 28 - FINANSØKONOM</h3>
+            <ul>
+                <li><span id="hours"></span>timer</li>
+                <li><span id="minutes"></span>minutter</li>
+                <li><span id="seconds"></span>sekunder</li>
+            </ul>
+        </div>
+
+
+        <div class="listecontainer">
+            <div class="liste">
+                <ul>
+                    <div>
+                        <li onclick="okonomi()" class="listeoverskrift">ØKONOMI</li>
+                    </div>
+                    <div>
+                        <li onclick="financialcontroller()">Financial controller</li>
+                    </div>
+                    <div>
+                        <li onclick="finansokonomi()">Finansøkonom</li>
+                    </div>
+                    <div>
+                        <li onclick="financialcontroller()">Markedsføringsøkonom</li>
+                    </div>
+                    <div>
+                        <li onclick="finansokonomi()">Serviceøkonom</li>
+                    </div>
+                </ul>
+            </div>
+
+
+            <div class="liste">
+                <ul>
+                    <div>
+                        <li onclick="it()" class="listeoverskrift">IT</li>
+                    </div>
+                    <div>
+                        <li onclick="automationsteknologi()">Automationsteknolog</li>
+                    </div>
+                    <div>
+                        <li onclick="itteknolog()">It-teknolog</li>
+                    </div>
+                    <div>
+                        <li onclick="multimediedesign()">Multimediedesigner</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="liste">
+                <ul>
+                    <div>
+                        <li onclick="middel()" class="listeoverskrift">NATUR &amp; MILJØ </li>
+                    </div>
+                    <div>
+                        <li>Laborant</li>
+                    </div>
+                    <div>
+                        <li>Miljøteknolog</li>
+                    </div>
+                    <div>
+                        <li>Jordburgsteknolog</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="liste">
+                <ul>
+                    <div>
+                        <li class="listeoverskrift">KOMMUNIKATION</li>
+                    </div>
+                    <div>
+                        <li>Produktionsteknolog</li>
+                    </div>
+                    <div>
+                        <li>Autoteknolog</li>
+                    </div>
+                    <div>
+                        <li>Byggekoordinator</li>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="kort" id="kort"></div>
+
+        <img id="img-area" src="img/forside.png" alt="">
+
+    </main>
+
+
+
+    <footer id="footer">
+        <p id="footertekst"> Vind alle dine skolebøger til første semester - Værdi 3000 kroner - <button type="button" id="centrerknap">Klik her</button> </p>
+        <p></p>
+    </footer>
+
+
+    <datalist id="pbliste"></datalist>
+
+
+    <script>
+        var img = document.getElementById("img-area");
+
+        function finddinvej() {
+            img.src = 'img/forside.png';
+        }
+
+        function okonomi() {
+            img.src = 'img/okonomi.png';
+        }
+
+        function financialcontroller() {
+            img.src = 'img/financialcontroller.png';
+        }
+
+        function finansokonomi() {
+            img.src = 'img/finansokonomi.png';
+        }
+
+        function financialcontroller() {
+            img.src = 'img/financialcontroller.png';
+        }
+
+        function finansokonomi() {
+            img.src = 'img/finansokonomi.png';
+        }
+
+        function it() {
+            img.src = 'img/it.png';
+        }
+
+        function automationsteknologi() {
+            img.src = 'img/automationsteknologi.png';
+        }
+
+        function itteknolog() {
+            img.src = 'img/itteknolog.png';
+        }
+
+        function multimediedesign() {
+            img.src = 'img/multimediedesigner.png';
+        }
+
+        function finddinvej() {
+            img.src = 'img/forside.png';
+        }
+
+    </script>
+
+    <script src="js/mitjs.js"></script>
+
+</body>
+
+</html>
